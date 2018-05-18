@@ -12,6 +12,7 @@ server:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.buer.boot1.entity
 
 girl:
   cupSize: B

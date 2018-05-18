@@ -1,4 +1,4 @@
-package com.buer.boot1.dto;
+package com.buer.boot1.entity;
 
 public class Students {
     private String id;

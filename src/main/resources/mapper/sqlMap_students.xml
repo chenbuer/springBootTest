@@ -2,13 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.buer.boot1.dao.StudentsDao">
 
-    <resultMap type="com.buer.boot1.dto.Students" id="Students">
+    <resultMap type="com.buer.boot1.entity.Students" id="Students">
         <result property="id" column="id"/>
         <result property="name" column="NAME"/>
         <result property="age" column="AGE"/>
     </resultMap>
 
-    <insert id="insertStudent" parameterType="com.buer.boot1.dto.Students">
+    <insert id="insertStudent" parameterType="com.buer.boot1.entity.Students">
         INSERT INTO buer_students(NAME,AGE)
         VALUES(#{name},#{age});
     </insert>

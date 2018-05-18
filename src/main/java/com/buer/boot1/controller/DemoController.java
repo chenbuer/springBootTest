@@ -1,9 +1,8 @@
 package com.buer.boot1.controller;
 
-import com.buer.boot1.Config.Bean.Girl;
 import com.buer.boot1.config.configProperties.Girl;
 import com.buer.boot1.dao.StudentsDao;
-import com.buer.boot1.dto.Students;
+import com.buer.boot1.entity.Students;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
