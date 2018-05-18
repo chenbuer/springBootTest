@@ -8,9 +8,20 @@
         <result property="age" column="AGE"/>
     </resultMap>
 
+    <sql id="Base_Column_List">
+        id, NAME, AGE
+    </sql>
+
     <insert id="insertStudent" parameterType="com.buer.boot1.entity.Students">
         INSERT INTO buer_students(NAME,AGE)
         VALUES(#{name},#{age});
     </insert>
+
+    <select id="findByPage" resultMap="Students">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM buer_students
+        ORDER by id
+    </select>
 
 </mapper>
