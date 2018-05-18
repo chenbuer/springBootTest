@@ -14,6 +14,12 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.buer.boot1.entity
 
+# pageHelper插件配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+
 girl:
   cupSize: B
   age: 18

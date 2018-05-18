@@ -18,10 +18,12 @@ public class DemoController {
 
     @GetMapping("test")
     public String test1() {
-        Students students=new Students();
-        students.setAge(19);
-        students.setName("testFromSpringBoot");
-        studentsDao.insertStudent(students);
+        Students students = new Students();
+        for (int i = 0; i < 50; i++) {
+            students.setAge(18+i);
+            students.setName("testFromSpringBoot:"+i);
+            studentsDao.insertStudent(students);
+        }
         return girl.getCupSize();
     }
 }
