@@ -15,8 +15,6 @@ public class DemoController {
     @Autowired
     private Girl girl;
 
-    @Autowired
-    private StudentsDao studentsDao;
 
     @Autowired
     private StudentService studentService;
@@ -27,7 +25,7 @@ public class DemoController {
         for (int i = 0; i < 50; i++) {
             students.setAge(18 + i);
             students.setName("testFromSpringBoot:" + i);
-            studentsDao.insertStudent(students);
+            studentService.insertStudent(students);
         }
         return girl.getCupSize();
     }

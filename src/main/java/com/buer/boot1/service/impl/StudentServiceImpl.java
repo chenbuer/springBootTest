@@ -20,4 +20,9 @@ public class StudentServiceImpl implements StudentService {
         return studentsDao.findByPage();
 
     }
+
+    @Override
+    public void insertStudent(Students students) {
+        studentsDao.insertStudent(students);
+    }
 }
